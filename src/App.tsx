@@ -79,7 +79,8 @@ export const App = () => {
         </div>
       </div>
 
-      <Gap size={96} />
+      <Gap size={128} />
+      <Gap size={16} />
 
       <BottomSheet
         open={warning}
