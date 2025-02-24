@@ -79,6 +79,8 @@ export const App = () => {
         </div>
       </div>
 
+      <Gap size={96} />
+
       <BottomSheet
         open={warning}
         onClose={() => setWarning(false)}
