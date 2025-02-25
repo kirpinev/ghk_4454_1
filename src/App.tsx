@@ -11,8 +11,10 @@ import { List } from "@alfalab/core-components/list";
 import { Comment } from "@alfalab/core-components/comment";
 import { Link } from "@alfalab/core-components/link";
 
+const aiLink = 'alfabank://configurable_chat?sourceChannelId=AI5_CHAT&navigationTitle=%D0%90%D0%BB%D1%8C%D1%84%D0%B0-%D0%90%D1%81%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BD%D1%82&attachmentsPickerEnabled=false&suggestionsEnabled=false&welcomeMessageEnabled=false&voiceMessageEnabled=false&quotesEnabled=false'
+
 const Redirect = () => {
-  window.location.replace("https://alfabank.ru/");
+  window.location.href = aiLink;
 
   return null;
 };
@@ -91,7 +93,7 @@ export const App = () => {
             block
             view="primary"
             onClick={submit}
-            href="https://alfabank.ru/"
+            href={aiLink}
           >
             Понятно, продолжить
           </ButtonMobile>
